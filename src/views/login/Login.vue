@@ -26,7 +26,7 @@
                   Login
                 </button>
               </div>
-              <a href="#" class="float-right">0.1.3</a>
+              <a href="#" class="float-right">0.1.4</a>
             </form>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       pin: null,
-      disabled: false
+      disabled: true
     };
   },
   mounted() {
