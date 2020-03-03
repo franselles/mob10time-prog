@@ -24,8 +24,7 @@
           </button>
         </div>
       </div>
-    </div>
-    <div class="columns is-centered">
+      <br /><br />
       <div class="column">
         <button class="button is-large is-danger" @click="goCancel">
           <span class="icon is-medium">
