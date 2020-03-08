@@ -24,7 +24,8 @@
           </button>
         </div>
       </div>
-      <br /><br />
+      <br />
+      <br />
       <div class="column">
         <button class="button is-large is-danger" @click="goCancel">
           <span class="icon is-medium">
