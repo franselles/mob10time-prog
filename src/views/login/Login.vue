@@ -26,7 +26,15 @@
                   Login
                 </button>
               </div>
-              <a href="#" class="float-right">0.1.12</a>
+              <article class="message is-danger" v-if="error">
+                <div class="message-header">
+                  <p>ERROR</p>
+                </div>
+                <div class="message-body">
+                  DNI / NIE INCORRECTOS
+                </div>
+              </article>
+              <a href="#" class="float-right">0.1.13</a>
             </form>
           </div>
         </div>
@@ -44,6 +52,7 @@ export default {
     return {
       pin: null,
       disabled: true,
+      error: false,
     };
   },
   mounted() {
@@ -59,12 +68,18 @@ export default {
     ...mapMutations(['setLogin', 'resetEmployee']),
     login() {
       let s = this.pin;
-      this.getEmployee(s.toUpperCase()).then((result) => {
-        if (result.active === true) {
-          this.setLogin();
-          this.$router.push({ name: 'Hour' });
-        }
-      });
+      this.getEmployee(s.toUpperCase())
+        .then((result) => {
+          if (result.active === true) {
+            this.setLogin();
+            this.$router.push({ name: 'Hour' });
+          } else {
+            this.error = true;
+          }
+        })
+        .catch(() => {
+          this.error = true;
+        });
     },
   },
   computed: {
