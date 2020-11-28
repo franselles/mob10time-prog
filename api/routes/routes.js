@@ -17,7 +17,7 @@ api.get('/worktime/status', statusControl.getActiveServer);
 api.post('/worktime/time', timeControl.postTimeMany);
 api.get('/worktime/timeday/:id/:date', timeControl.getTimeDay);
 
-api.get('/', function(request, response) {
+api.get('/', function (request, response) {
   response.send('NODE AT WORK!!!');
 });
 
