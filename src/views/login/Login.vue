@@ -30,11 +30,9 @@
                 <div class="message-header">
                   <p>ERROR</p>
                 </div>
-                <div class="message-body">
-                  DNI / NIE INCORRECTOS
-                </div>
+                <div class="message-body">DNI / NIE INCORRECTOS</div>
               </article>
-              <a href="#" class="float-right">0.1.13</a>
+              <a href="#" class="float-right">0.1.14</a>
             </form>
           </div>
         </div>
