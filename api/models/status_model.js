@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const statusSchema = Schema(
   {
-    state: String
+    state: String,
   },
   { collection: 'status' }
 );

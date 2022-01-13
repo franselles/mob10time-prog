@@ -13,7 +13,7 @@ const timeControlSchema = Schema(
     start_time: String,
     end_time: String,
     hours: Number,
-    max: Number
+    max: Number,
   },
   { collection: 'time_control' }
 );

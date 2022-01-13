@@ -10,7 +10,7 @@ const schesuleSchema = new Schema({
   random_start: { type: Number },
   random_end: { type: Number },
   max: Number,
-  active: Boolean
+  active: Boolean,
 });
 
 const employeesSchema = new Schema(
@@ -19,7 +19,7 @@ const employeesSchema = new Schema(
     password: { type: String },
     name: { type: String, uppercase: true },
     active: { type: Boolean, default: true },
-    schedule: [schesuleSchema]
+    schedule: [schesuleSchema],
   },
   { collection: 'employees' }
 );
