@@ -8,14 +8,7 @@
               <div class="field">
                 <label for="" class="label">DNI/NIE</label>
                 <div class="control has-icons-left">
-                  <input
-                    v-model="pin"
-                    type="password"
-                    placeholder="*********"
-                    class="input"
-                    maxlength="9"
-                    required
-                  />
+                  <input v-model="pin" type="password" placeholder="*********" class="input" maxlength="9" required />
                   <span class="icon is-small is-left">
                     <i class="fa fa-lock"></i>
                   </span>
@@ -32,7 +25,7 @@
                 </div>
                 <div class="message-body">DNI / NIE INCORRECTOS</div>
               </article>
-              <a href="#" class="float-right">0.1.21</a>
+              <a href="#" class="float-right">1.1.22-vu26-nd14</a>
             </form>
           </div>
         </div>

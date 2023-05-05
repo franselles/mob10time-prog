@@ -9,7 +9,7 @@ import VueAxios from 'vue-axios';
 
 import './../node_modules/bulma/css/bulma.min.css';
 
-//const baseURL = 'http://localhost:8080/api/';
+// const baseURL = 'http://localhost:8080/api/';
 const baseURL = '/api/';
 
 axios.defaults.baseURL = baseURL;
